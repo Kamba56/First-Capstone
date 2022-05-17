@@ -11,6 +11,8 @@ body {
   font-family: 'Zen Maru Gothic', sans-serif;
   color: #272a31;
   background: #f5f5f5;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 ul {
@@ -37,7 +39,7 @@ a {
 
 /* My classes */
 .big-text {
-  font-size: 38px;
+  font-size: 40px;
   line-height: 48px;
 }
 
@@ -195,6 +197,7 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
 }
 
 .desc {
@@ -206,15 +209,18 @@ header {
 
 /* Program section style */
 #program {
-  background-image: linear-gradient(to bottom, rgba(39, 42, 49, 0.8), rgba(39, 42, 49, 1)), url('./assets/images/program-bg.png');
+  background-image: linear-gradient(to bottom, rgba(39, 42, 49, 0.8) 20%, rgb(39, 42, 49) 70%), url('./assets/images/program-bg.png');
   background-repeat: no-repeat;
   background-position: center top;
+  color: #f5f5f5;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .section-title {
   position: relative;
   padding: 10px;
-  color: #f5f5f5;
+  margin-bottom: 24px;
 }
 
 .section-title::after {
@@ -228,4 +234,95 @@ header {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#program .grid .grid-item {
+  justify-content: space-between;
+  padding: 12px;
+}
+
+#program .grid .grid-item i {
+  font-size: xx-large;
+  flex: 1
+}
+
+.program-title {
+  padding: 0 15px;
+  flex: 2.8;
+}
+
+.grid-item .program-desc {
+  flex: 5;
+}
+
+.btn1 {
+  background: #ec5242;
+  color: #fff;
+  font-size: 22px;
+  padding: 20px;
+  width: 270px;
+  margin-top: 24px;
+}
+
+/* Feature section styling */
+#features {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#features .grid {
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+}
+
+#features .grid .grid-item {
+  justify-content: space-between;
+}
+
+.feature-img {
+  padding: 10px 0 0 10px;
+  position: relative;
+  width: 38%;
+}
+
+.feature-img::before {
+  content: "";
+  height: 80px;
+  width: 80px;
+  background: #272a31;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.feature-desc {
+  width: 60%;
+  justify-content: center;
+}
+
+.feat {
+  font-style: italic;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 10px 0;
+}
+
+.feat::after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background: #c6c6c6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.btn2 {
+  border: 1px solid #272a31;
+  border-radius: 3px;
+  color: #272a31;
+  padding: 14px;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 24px;
 }

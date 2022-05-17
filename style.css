@@ -37,7 +37,7 @@ a {
 
 /* My classes */
 .big-text {
-  font-size: 40px;
+  font-size: 38px;
   line-height: 48px;
 }
 
@@ -87,6 +87,7 @@ a {
 
 .wrapper {
   width: 100%;
+  padding: 50px 24px;
 }
 
 .container {
@@ -101,6 +102,24 @@ a {
 .upper {
   text-transform: uppercase;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  width: 100%;
+}
+
+.grid-item {
+  height: auto;
+  background: #f5f5f520;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+
 /* Header styling */
 header {
   justify-content: space-between;
@@ -122,6 +141,7 @@ header {
   background: #272a31;
   padding-top: 40px;
   overflow: auto;
+  overscroll-behavior: contain;
   height: 100vh;
   z-index: 10;
   display: none;
@@ -153,7 +173,7 @@ header {
 }
 
 .toggle-menu {
-  font-size: 50px;
+  font-size: 40px;
   padding: 5px 15px;
   z-index: 50;
 }
@@ -162,13 +182,19 @@ header {
 #headline {
   padding: 150px 24px 70px 24px;
   min-height: 90vh;
-  background-image: linear-gradient(180deg, rgba(245, 245, 245, 0.9), rgb(245, 245, 245) 100%), url('./assets/images/headline-bg.png');
+  background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.9) 10%, rgb(245, 245, 245) 25%), url('./assets/images/headline-bg.png');
   background-repeat: no-repeat;
-  background-position: center top, center top;
+  background-position: center top;
 }
 
 #headline h1 {
   margin-top: 0px;
+  background-image: linear-gradient(to bottom right, rgba(236, 82, 66, 0.5) 10%, rgba(236, 82, 66, 1) 90%), url(./assets/images/text-bg.png);
+  background-repeat: repeat;
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .desc {
@@ -176,4 +202,30 @@ header {
   border: 2px solid #fff;
   background: #f5f5f5;
   margin: 24px auto;
+}
+
+/* Program section style */
+#program {
+  background-image: linear-gradient(to bottom, rgba(39, 42, 49, 0.8), rgba(39, 42, 49, 1)), url('./assets/images/program-bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.section-title {
+  position: relative;
+  padding: 10px;
+  color: #f5f5f5;
+}
+
+.section-title::after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  border-radius: 2px;
+  background: #ec5242;
+  transition: width 1s 5ms;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }

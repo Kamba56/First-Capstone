@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+/* General styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #272a31;
+  background: #f5f5f5;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* My classes */
+.big-text {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.medium-text {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.regular-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.semi-bold {
+  font-weight: 500;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.color1 {
+  color: #ec5242;
+}
+
+.color2 {
+  color: #d3d3d3;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-align {
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+/* Header styling */
+header {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 8px 14px;
+  position: absolute;
+  top: 0;
+  background: transparent;
+}
+
+#logo {
+  display: none;
+}
+
+#navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: #272a31;
+  padding-top: 40px;
+  overflow: auto;
+  height: 100vh;
+  z-index: 10;
+  display: none;
+}
+
+#navbar ul li a {
+  color: #f5f5f5;
+  display: block;
+  padding: 10px;
+  font-size: 34px;
+  position: relative;
+}
+
+#navbar ul li a::after {
+  content: "";
+  height: 3px;
+  width: 20px;
+  border-radius: 2px;
+  background: #ec5242;
+  transition: width 1s 5ms;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  z-index: 20;
+}
+
+#navbar ul li a:hover::after {
+  width: calc(100% - 20px);
+}
+
+.toggle-menu {
+  font-size: 50px;
+  padding: 5px 15px;
+  z-index: 50;
+}
+
+/* Headline section Styling */
+#headline {
+  padding: 150px 24px 70px 24px;
+  min-height: 90vh;
+  background-image: linear-gradient(180deg, rgba(245, 245, 245, 0.9), rgb(245, 245, 245) 100%), url('./assets/images/headline-bg.png');
+  background-repeat: no-repeat;
+  background-position: center top, center top;
+}
+
+#headline h1 {
+  margin-top: 0px;
+}
+
+.desc {
+  padding: 12px 16px;
+  border: 2px solid #fff;
+  background: #f5f5f5;
+  margin: 24px auto;
+}

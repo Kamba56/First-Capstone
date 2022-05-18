@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="372" height="147" viewBox="0 0 372 147">
+  <g id="Group_118" data-name="Group 118" transform="translate(-85 -350)">
+    <g id="Group_110" data-name="Group 110" transform="translate(-75.339 242)">
+      <circle id="Ellipse_14" data-name="Ellipse 14" cx="29" cy="29" r="29" transform="translate(160.339 136)" fill="blue" opacity="0.6"/>
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="29" cy="29" r="29" transform="translate(199.339 136)" fill="red" opacity="0.7"/>
+      <circle id="Ellipse_16" data-name="Ellipse 16" cx="29" cy="29" r="29" transform="translate(179.339 169)" fill="#fd0" opacity="0.6"/>
+    </g>
+    <g id="Group_117" data-name="Group 117">
+      <g id="Group_1" data-name="Group 1" transform="translate(102 287)">
+        <text id="amba" transform="translate(145 154)" fill="#a11640" font-size="100" font-family="PoorRichard-Regular, Poor Richard"><tspan x="0" y="0">amba</tspan></text>
+        <text id="K" transform="translate(82 154)" fill="#f90" font-size="100" font-family="PoorRichard-Regular, Poor Richard"><tspan x="0" y="0">K</tspan></text>
+      </g>
+      <text id="events" transform="translate(184 484)" fill="#272a31" font-size="60" font-family="PoorRichard-Regular, Poor Richard"><tspan x="0" y="0">events</tspan></text>
+    </g>
+  </g>
+</svg>

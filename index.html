@@ -13,34 +13,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="flex-row">
-    <div id="logo">
-      <a href="index.html">
-        <img src="#" alt="Picture of Logo">
-      </a>
+  <header>
+    <div class="container flex-row">
+      <div id="logo">
+        <a href="index.html">
+          <img src="./assets/images/logo.svg" alt="Picture of Logo">
+        </a>
+      </div>
+      <button class="toggle-menu">
+        <i class="bi bi-list"></i>
+      </button>
+      <nav id="navbar">
+        <ul class="flex-column center-align">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Program</a>
+          </li>
+          <li>
+            <a href="#">Sponsor</a>
+          </li>
+          <li>
+            <a href="#">News</a>
+          </li>
+          <li class="last-child">
+            <a href="#">CC Campaign</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <button class="toggle-menu">
-      <i class="bi bi-list"></i>
-    </button>
-    <nav id="navbar">
-      <ul class="flex-column center-align">
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Program</a>
-        </li>
-        <li>
-          <a href="#">Sponsor</a>
-        </li>
-        <li>
-          <a href="#">News</a>
-        </li>
-        <li>
-          <a href="#">CC Campaign</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main>
@@ -56,7 +58,7 @@
 
     <section id="program" class="wrapper flex-column center-align">
       <h2 class="capitalize semi-bold section-title medium-text">Main Program</h2>
-      <div class="grid">
+      <div class="grid container">
         <div class="grid-item flex-row center-align">
           <i class="fa-solid fa-microphone-lines"></i>
           <h4 class="program-title color1 regular-text">Musical Performances</h4>
@@ -90,11 +92,12 @@
       <button type="button" class="btn1 capitalize regular">
           Join the party
       </button>
+      <a href="#" class="see-more capitalize medium-text">See more programs</a>
     </section>
 
     <section id="features" class="wrapper flex-column center-align">
       <h2 class="capitalize semi-bold section-title medium-text">Featured artists</h2>
-      <div class="grid">
+      <div class="grid container">
         <div class="grid-item flex-row center-align">
           <figure class="feature-img">
             <img src="./assets/images/pic1.png" alt="Picture of featured artist">
@@ -165,7 +168,30 @@
         more <i class="bi bi-arrow-down-circle-fill color1"></i>
       </button>
     </section>
+
+    <section id="partners" class="wrapper flex-column center-align">
+      <h2 class="capitalize semi-bold section-title medium-text">Partners</h2>
+      <div class="flex-row center-align container">
+        <img src="./assets/images/image2vector.svg" alt="Picture of partner logo">
+        <img src="./assets/images/google.svg" alt="Picture of partner logo">
+        <img src="./assets/images/naver.svg" alt="Picture of partner logo">
+        <img src="./assets/images/tokopedia.png" alt="Picture of partner logo">
+        <img src="./assets/images/airbnb.svg" alt="Picture of partner logo">
+      </div>
+    </section>
   </main>
+
+  <footer class="wrapper">
+    <div class="container flex-column center-align">
+      <figure>
+        <img src="./assets/images/logo.svg" alt="Picture of logo">
+      </figure>
+      <div class="flex-column footer-desc center-align">
+        <h4 class="regular-text semi-bold capitalize">2022 Demigodd listening Party</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolor ipsum totam cupiditate, sunt praesentium est odit.</p>
+      </div>
+    </div>
+  </footer>
   
 </body>
 </html>

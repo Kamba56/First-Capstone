@@ -140,12 +140,13 @@ header {
   top: 0;
   background: transparent;
   width: 100%;
+  padding: 8px 14px;
 }
 
 header .flex-row {
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 8px 14px;
+  width: 100%;
 }
 
 #logo {
@@ -156,11 +157,12 @@ header .flex-row {
   width: 100%;
   position: absolute;
   top: 0;
+  left: 0;
   background: #272a31;
   padding-top: 40px;
   overflow: auto;
   overscroll-behavior: contain;
-  height: 100vh;
+  height: 105vh;
   z-index: 10;
   display: none;
 }
@@ -171,6 +173,7 @@ header .flex-row {
   padding: 10px;
   font-size: 34px;
   position: relative;
+  line-height: 40px;
 }
 
 #navbar ul li a::after {
@@ -193,7 +196,7 @@ header .flex-row {
 .toggle-menu {
   font-size: 40px;
   padding: 5px 15px;
-  z-index: 50;
+  z-index: 1;
 }
 
 .close-menu {

@@ -17,16 +17,20 @@
     <div class="container flex-row">
       <div id="logo">
         <a href="index.html">
-          <img src="./assets/images/logo.svg" alt="Picture of Logo">
+          <img src="./assets/images/logo.png" alt="Picture of Logo">
         </a>
       </div>
       <button class="toggle-menu">
         <i class="bi bi-list"></i>
       </button>
+
+      <button type="button" class="close-menu d-none">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
       <nav id="navbar">
         <ul class="flex-column center-align">
           <li>
-            <a href="#">About</a>
+            <a href="about.html">About</a>
           </li>
           <li>
             <a href="#">Program</a>
@@ -57,7 +61,7 @@
     </section>
 
     <section id="program" class="wrapper flex-column center-align">
-      <h2 class="capitalize semi-bold section-title medium-text">Main Program</h2>
+      <h2 class="capitalize semi-bold section-title medium-text center-text">Main Program</h2>
       <div class="grid container">
         <div class="grid-item flex-row center-align">
           <i class="fa-solid fa-microphone-lines"></i>
@@ -96,7 +100,7 @@
     </section>
 
     <section id="features" class="wrapper flex-column center-align">
-      <h2 class="capitalize semi-bold section-title medium-text">Featured artists</h2>
+      <h2 class="capitalize semi-bold section-title medium-text center-text">Featured artists</h2>
       <div class="grid container">
         <div class="grid-item flex-row center-align">
           <figure class="feature-img">
@@ -164,13 +168,16 @@
           </div>
         </div>
       </div>
-      <button type="button" class="btn2 upper">
+      <button type="button" class="btn2 upper d-block">
         more <i class="bi bi-arrow-down-circle-fill color1"></i>
+      </button>
+      <button type="button" class="btn2 upper d-none">
+        more <i class="bi bi-arrow-up-circle-fill color1"></i>
       </button>
     </section>
 
     <section id="partners" class="wrapper flex-column center-align">
-      <h2 class="capitalize semi-bold section-title medium-text">Partners</h2>
+      <h2 class="capitalize semi-bold section-title medium-text center-text">Partners</h2>
       <div class="flex-row center-align container">
         <img src="./assets/images/image2vector.svg" alt="Picture of partner logo">
         <img src="./assets/images/google.svg" alt="Picture of partner logo">
@@ -184,9 +191,9 @@
   <footer class="wrapper">
     <div class="container flex-column center-align">
       <figure>
-        <img src="./assets/images/logo.svg" alt="Picture of logo">
+        <img src="./assets/images/logo.png" alt="Picture of logo">
       </figure>
-      <div class="flex-column footer-desc center-align">
+      <div class="flex-column footer-desc">
         <h4 class="regular-text semi-bold capitalize">2022 Demigodd listening Party</h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolor ipsum totam cupiditate, sunt praesentium est odit.</p>
       </div>

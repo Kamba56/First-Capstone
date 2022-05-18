@@ -105,6 +105,18 @@ a {
   text-transform: uppercase;
 }
 
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.center-text {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -184,18 +196,27 @@ header .flex-row {
   z-index: 50;
 }
 
+.close-menu {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 25px;
+  color: #f5f5f5;
+  z-index: 100;
+}
+
 /* Headline section Styling */
 #headline {
   padding: 150px 24px 70px 24px;
   min-height: 90vh;
-  background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.9) 10%, rgb(245, 245, 245) 25%), url('./assets/images/headline-bg.png');
+  background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.9) 0%, rgb(245, 245, 245) 30%), url('./assets/images/headline-bg.png');
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 #headline h1 {
   margin-top: 0px;
-  background-image: linear-gradient(to bottom right, rgba(236, 82, 66, 0.5) 10%, rgba(236, 82, 66, 1) 90%), url(./assets/images/text-bg.png);
+  background-image: linear-gradient(to bottom right, rgba(236, 82, 66, 1) 20%, rgba(236, 82, 66, 0.3) 50%), url(./assets/images/text-bg.png);
   background-repeat: repeat;
   background-size: contain;
   background-clip: text;
@@ -361,6 +382,10 @@ footer div figure {
   margin-bottom: 20px;
 }
 
+footer .footer-desc {
+  text-align: center;
+}
+
 /* Media Queries */
 @media only screen and (min-width:768px) {
   /* General */
@@ -397,7 +422,7 @@ footer div figure {
 
   /* header */
   header {
-    box-shadow: rgb(0 0 0 / 20%) 0px -2px 6px;
+    box-shadow: rgb(0 0 0 / 20%) 0px -2px 15px;
     background: #fff;
     position: fixed;
     top: 0;
@@ -441,7 +466,7 @@ footer div figure {
   /* Headline */
   #headline {
     position: static;
-    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.9) 15%, rgb(245, 245, 245) 30%), url('./assets/images/headline-bg-desktop.png');
+    background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.9) 30%, rgb(245, 245, 245) 50%), url('./assets/images/headline-bg-desktop.png');
     background-repeat: no-repeat;
     background-position: center top;
   }
@@ -494,6 +519,7 @@ footer div figure {
 
   footer div .footer-desc {
     width: 65%;
+    text-align: left;
   }
 
   footer div figure {

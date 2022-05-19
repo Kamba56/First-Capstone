@@ -210,6 +210,7 @@ header .flex-row {
 
 /* Headline section Styling */
 #headline {
+  position: relative;
   padding: 150px 24px 70px 24px;
   min-height: 90vh;
   background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.9) 0%, rgb(245, 245, 245) 30%), url('./assets/images/headline-bg.png');
@@ -217,12 +218,15 @@ header .flex-row {
   background-position: center top;
 }
 
+#headline div {
+  z-index: 5;
+}
+
 #headline h1 {
-  margin-top: 0px;
+  margin-top: 0;
   background-image: linear-gradient(to bottom right, rgba(236, 82, 66, 1) 20%, rgba(236, 82, 66, 0.3) 50%), url(./assets/images/text-bg.png);
   background-repeat: repeat;
   background-size: contain;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -1px;
@@ -233,7 +237,40 @@ header .flex-row {
   border: 2px solid #fff;
   background: #f5f5f5;
   margin: 24px auto;
-  box-shadow: rgb(0 0 0 / 20%) 0px 0px 6px;
+  box-shadow: rgb(0 0 0 / 20%) 0 0 6px;
+}
+
+.bg-icon {
+  font-size: 8rem;
+  z-index: 0;
+  color: #272a3113;
+  position: absolute;
+}
+
+.tl {
+  top: 15%;
+  right: 8%;
+}
+
+.tr {
+  top: 25%;
+  left: 5%;
+}
+
+.c {
+  top: 55%;
+  right: 22%;
+}
+
+.bc {
+  bottom: -4%;
+  left: 10%;
+}
+
+.rc {
+  right: 5%;
+  top: 72%;
+  font-size: 5em;
 }
 
 /* Program section style */
@@ -241,6 +278,7 @@ header .flex-row {
   background-image: linear-gradient(to bottom, rgba(39, 42, 49, 0.8) 20%, rgb(39, 42, 49) 70%), url('./assets/images/program-bg.png');
   background-repeat: no-repeat;
   background-position: center top;
+  background-attachment: fixed;
   color: #f5f5f5;
   padding-left: 10px;
   padding-right: 10px;
@@ -272,7 +310,7 @@ header .flex-row {
 
 #program .grid .grid-item i {
   font-size: xx-large;
-  flex: 1
+  flex: 1;
 }
 
 .program-title {
@@ -390,12 +428,12 @@ footer .footer-desc {
 }
 
 /* Media Queries */
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   /* General */
   body {
     font-size: 16px;
   }
-  
+
   .container {
     width: 80%;
   }
@@ -404,34 +442,39 @@ footer .footer-desc {
     font-size: 65px;
     line-height: 70px;
   }
-  
+
   .medium-text {
     font-size: 32px;
     line-height: 38px;
   }
-  
+
   .regular-text {
     font-size: 20px;
     line-height: 24px;
   }
 
-  #logo, #navbar, .see-more {
+  #logo,
+  #navbar,
+  .see-more {
     display: block;
   }
 
-  .toggle-menu, .btn2, .btn1 {
+  .toggle-menu,
+  .btn2,
+  .btn1 {
     display: none;
   }
 
   /* header */
   header {
-    box-shadow: rgb(0 0 0 / 20%) 0px -2px 15px;
+    box-shadow: rgb(0 0 0 / 20%) 0 -2px 15px;
     background: #fff;
     position: fixed;
     top: 0;
     z-index: 200;
   }
-  header .flex-row{
+
+  header .flex-row {
     flex-wrap: nowrap;
     align-items: center;
   }
@@ -452,14 +495,14 @@ footer .footer-desc {
     flex-direction: row;
   }
 
+  .last-child a {
+    border: 4px solid #ec5242;
+    margin: 0 20px;
+  }
+
   #navbar ul li a {
     color: #272a31;
     font-size: 16px;
-  }
-
-  .last-child a {
-    border: 4px solid #ec5242;
-    margin-left: 20px;
   }
 
   .last-child a::after {
@@ -485,8 +528,8 @@ footer .footer-desc {
   /* Program section */
   #program {
     background-image: linear-gradient(to bottom, rgba(39, 42, 49, 0.8) 20%, rgb(39, 42, 49) 90%), url('./assets/images/program-bg-desktop.png');
-  background-repeat: no-repeat;
-  background-position: center top;
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 
   #program .grid {
@@ -507,6 +550,10 @@ footer .footer-desc {
   /* Feature */
   #features .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #features .grid .grid-item {
+    max-width: 500px;
   }
 
   /* Partners */

@@ -13,15 +13,15 @@
 
 #headline .desc {
   background: #fff;
-  border-color: #eeeeee;
+  border-color: #eee;
   box-shadow: none;
   margin-bottom: 50px;
 }
 
 #about-logo {
   background: #fff;
-  border-bottom: 2px solid #eeeeee;
-  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eee;
+  border-top: 2px solid #eee;
 }
 
 .container1 {
@@ -32,7 +32,7 @@
 
 .container1 figure {
   padding: 20px;
-  border: 2px solid #eeeeee;
+  border: 2px solid #eee;
   width: 85%;
   margin: 40px auto 0;
 }
@@ -68,8 +68,8 @@ footer {
   color: #fff;
 }
 
-@media only screen and (max-width:76px) {
+@media only screen and (min-width: 768px) {
   #past .grid {
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-  }  
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

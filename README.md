@@ -11,9 +11,13 @@
 - CSS
 - JavaScript
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://kamba56.github.io/First-Capstone/)
+
+## Video link
+
+[Loom video link](https://www.loom.com/share/b17f7ee5ecef49789e0583abfd8b6e02)
 
 
 ## Getting Started
